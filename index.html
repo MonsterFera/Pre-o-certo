@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planilha Responsiva no HTML</title>
+    
+    <style>
+        body {
+            /* Remove margens padrão do navegador */
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            text-align: center;
+        }
+        .container {
+            /* Contêiner para limitar a largura máxima em telas muito grandes */
+            max-width: 1200px; 
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .iframe-wrapper {
+            /* Wrapper para manter o iframe contido */
+            overflow: hidden; 
+            border: 1px solid #ccc; 
+            border-radius: 4px;
+        }
+        h1 {
+            color: #1A723D;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Planilha com Ajuste Automático de Largura</h1>
+        <p>A largura se ajustará a 100% da tela disponível, e a altura será fixa em 600px.</p>
+        
+        <div class="iframe-wrapper">
+            <iframe 
+                width="100%" 
+                height="600" 
+                frameborder="0" 
+                scrolling="no" 
+                src="https://1drv.ms/x/c/0264d7593dde68d6/IQR4a7pyFnz3SZmgiMG6RnkTAZqdb5pKJSJVOYo2-1waklQ?em=2&AllowTyping=True&wdHideGridlines=True&wdHideHeaders=True&wdDownloadButton=True&wdInConfigurator=True&wdInConfigurator=True"
+                title="Planilha Responsiva de Dados">
+            </iframe>
+        </div>
+        
+        <p>A planilha permite digitação e interatividade padrão.</p>
+    </div>
+
+</body>
+</html>
